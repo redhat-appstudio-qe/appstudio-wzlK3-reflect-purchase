@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-xfen
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-service-e2e-tenant/appstudio/dc-metro-map-xfen@sha256:67b77116cbad6b346093f3c08e0374844d17f9686e73ebac1ae4f46028b05112
+        name: my-nodejs
+        resources: {}
+status: {}
